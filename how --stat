@@ -1,0 +1,11 @@
+[33mcommit 77a518bbfa4332b2eb2dc5276a5eb1f8dedb5cf0[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Ace <xbxahmedxbx@gmail.com>
+Date:   Tue Aug 4 00:03:16 2026 +0300
+
+    Initial Spring Boot project setup with User entity
+
+[33mcommit f3ac9966b9991e8640ada4ecac821ccbc9c3e1ca[m
+Author: Ace <xbxahmedxbx@gmail.com>
+Date:   Tue Aug 4 00:01:27 2026 +0300
+
+    Initial Spring Boot project setup with User entity
