@@ -31,6 +31,12 @@ public class UserController {
         return userService.getAllUsers();
         
     }
+     // GET user by id
+    @GetMapping("/{id}")
+    public User getUserById(@PathVariable Long id) {
+        return userService.getUserById(id);
+    }
+
 
 
     /*  POST users and Creates a new user */
