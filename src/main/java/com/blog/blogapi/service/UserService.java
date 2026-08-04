@@ -19,8 +19,14 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-
+public User updateUser(Long id, User user) {
+    user.setId(id);
+    return userRepository.save(user);
+}
      
+public void deleteUser(Long id) {
+    userRepository.deleteById(id);
+}
     public List<User> getAllUsers() {
         return userRepository.findAll(); 
         /* Retrieves all users from the database
