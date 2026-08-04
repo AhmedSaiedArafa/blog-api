@@ -19,8 +19,15 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-public User updateUser(Long id, User user) {
-    user.setId(id);
+public User updateUser(Long id, User updatedUser) {
+
+    User user = userRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("User not found"));
+
+    user.setName(updatedUser.getName());
+    user.setEmail(updatedUser.getEmail());
+    user.setPassword(updatedUser.getPassword());
+
     return userRepository.save(user);
 }
      
